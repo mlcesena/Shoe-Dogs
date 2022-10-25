@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="global-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
+    <script src="nav.js" defer></script>
+    <script src="music.js" defer></script>
+</head>
+<nav>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+    <ul class="user-menu flex">
+        <li class="user-bar"><a href="admin.html">Admin</a></li>
+        <li class="user-bar"><a href="login.html">Login</a></li>
+    </ul>
+    <h1 class="nav-title"><a href="index.html">Shoe Dogs</a></h1>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="unactive"><a href="index.html">Home</a></li>
+        <li class="unactive"><a href="about.html">About</a></li>
+        <li class="active"><a href="shop.html">Shop</a></li>
+        <li class="unactive"><a href="events.html">Events</a></li>
+        <li class="unactive"><a href="conversion.html">Conversions</a></li>
+        <li class="unactive"><a href="references.html">References</a></li>
+    </ul>
+</nav>
+<body>
+    <!-- <div class="sidebar">
+        <h2>Filter</h2>
+
+    </div> -->
+    <div class="content">
+        <ul class="product-grid">
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/Nike-airforce.png" onmouseover="this.src='images/Nike-airforce1.jpeg'" onmouseout="this.src='images/Nike-airforce.png'">
+                    </div>
+                </a>
+                <p class="product-name">Nike Air Force 1 '07</p>
+                <p class="product-price">$110</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/Nike-airforceGreen.png" onmouseover="this.src='images/Nike-airforce2.png'" onmouseout="this.src='images/Nike-airforceGreen.png'">
+                    </div>
+                </a>
+                <p class="product-name">Nike Air Force 1 '07 LV8</p>
+                <p class="product-price">$130</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/Nike-waffle.png" onmouseover="this.src='images/Nike-waffle1.png'" onmouseout="this.src='images/Nike-waffle.png'">
+                    </div>
+                </a>
+                <p class="product-name">Nike Waffle One</p>
+                <p class="product-price">$105</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/Nike-blazer.png" onmouseover="this.src='images/Nike-blazer1.png'" onmouseout="this.src='images/Nike-blazer.png'">
+                    </div>
+                </a>
+                <p class="product-name">Nike Blazer Mid '77 Jumbo</p>
+                <p class="product-price">$110</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/Nike-dawns.png" onmouseover="this.src='images/Nike-dawn1.png'" onmouseout="this.src='images/Nike-dawns.png'">
+                    </div>
+                </a>
+                <p class="product-name">Nike Air Max Dawn</p>
+                <p class="product-price">$115</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/Nike-jordan.png" onmouseover="this.src='images/Nike-jordan1.png'" onmouseout="this.src='images/Nike-jordan.png'">
+                    </div>
+                </a>
+                <p class="product-name">Air Jordan 1 Mid SE Craft</p>
+                <p class="product-price">$135</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/100T_Sweater_Black.png" onmouseover="this.src='images/100T_Sweater_Black2.png'"
+                            onmouseout="this.src='images/100T_Sweater_Black.png'">
+                    </div>
+                </a>
+                <p class="product-name">100 Thieves Foundations Geoprint Crewneck - Black/Red</p>
+                <p class="product-price">$85</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/100T_Anorak.png" onmouseover="this.src='images/100T_Anorak2.png'"
+                            onmouseout="this.src='images/100T_Anorak.png'">
+                    </div>
+                </a>
+                <p class="product-name">100 Thieves Foundations Valkyrae Anorak - Purple</p>
+                <p class="product-price">$135</p>
+            </li>
+            <li class="item">
+                <a class="product-link" href="order.html">
+                    <div class="img-container">
+                        <img class="product-img" src="images/100T_Hat.png" onmouseover="this.src='images/100T_Hat2.png'"
+                            onmouseout="this.src='images/100T_Hat.png'">
+                    </div>
+                </a>
+                <p class="product-name">100 Thieves Foundations Nylon Snapback Hat</p>
+                <p class="product-price">$35</p>
+            </li>
+        </ul>
+    </div>
+    <!-- <h1 class="test">I lay deez nuts across your face</h1>
+    <button id="sicko">iLadies</button> -->
+    <div class="divider"></div>
+    <p class="footer">Designed and created by Michael Cesena</p>
+</body>
+</html>

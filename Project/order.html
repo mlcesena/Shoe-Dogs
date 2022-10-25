@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="global-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
+    <script src="nav.js" defer></script>
+</head>
+<nav>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+    <ul class="user-menu flex">
+        <li class="user-bar"><a href="admin.html">Admin</a></li>
+        <li class="user-bar"><a href="login.html">Login</a></li>
+    </ul>
+    <h1 class="nav-title"><a href="index.html">Shoe Dogs</a></h1>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="unactive"><a href="index.html">Home</a></li>
+        <li class="unactive"><a href="about.html">About</a></li>
+        <li class="unactive"><a href="shop.html">Shop</a></li>
+        <li class="unactive"><a href="events.html">Events</a></li>
+        <li class="unactive"><a href="conversion.html">Conversions</a></li>
+        <li class="unactive"><a href="references.html">References</a></li>
+    </ul>
+</nav>
+
+<body>
+    <main>
+        <div class="product-container">
+            <div class="product-img">
+
+            </div>
+            <div class="product-details">
+                <div class="product-text">
+                    <h1 class="product-title"></h1>
+                    <h2 class="product-price"></h2>
+                </div>
+                <div class="order actions">
+                    <form>
+                        <div class="sizing-container">
+                            <p class="sizing-text">Size</p>
+                            <div class="options-container">
+                                <label for="x-small">
+                                    <input id="x-small" type="radio" name="size">
+                                    <span>XS</span>
+                                </label>
+                                <label for="small">
+                                    <input id="small" type="radio" name="size">
+                                    <span>S</span>
+                                </label>
+                                <label for="medium">
+                                    <input id="medium" type="radio" name="size">
+                                    <span>M</span>
+                                </label>
+                                <label for="large">
+                                    <input id="large" type="radio" name="size">
+                                    <span>L</span>
+                                </label>
+                                <label for="x-large">
+                                    <input id="x-large" type="radio" name="size">
+                                    <span>XL</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="index.html">
+                        <button href="index.html" type="submit" class="order-button">Place Order</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
