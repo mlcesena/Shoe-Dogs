@@ -52,7 +52,3 @@ convertButton.addEventListener("click", () => {
         }
     }
 });
-
-form.submit(function (e) {
-    e.preventDefault();
-});

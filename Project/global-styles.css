@@ -18,7 +18,8 @@ body {
 .divider {
     display: flex;
     /* justify-content: center;s */
-    margin: 20px auto;
+    margin: 70px auto 20px auto;
+
     height: 2px;
     background-color: green;
     width: 95%;
@@ -122,6 +123,7 @@ body {
 .support-container p {
     font-size: 12px;
     margin: 0 0 10px 0;
+    padding: 0;
     color: red;
 }
 

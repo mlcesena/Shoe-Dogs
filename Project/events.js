@@ -66,4 +66,23 @@ $(document).ready(() => {
     }
 
     $("#calendar").html(rows);
+
+    $("#err").hide();
+
+    $("#submit-button").click(() => {
+        let str = $("#email").val();
+
+        if (str == "" || !str.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+            $("#err").show();
+            $("#email").css("border-color", "red");
+        }
+        else {
+            $("#email").hide();
+            $("#notif").text("Thank you for signing up!");
+            $("#notif").css("color", "green");
+            $("#err").hide();
+            $("#submit-button").hide();
+        }
+    });
 });
+
