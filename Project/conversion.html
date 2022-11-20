@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conversion</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="conversion.css">
     <link rel="stylesheet" href="global-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
     <script src="nav.js" defer></script>
+    <script src="convert.js" defer></script>
 </head>
 <nav>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
@@ -30,8 +31,43 @@
 
 <body>
     <main>
-
+        <div class="conversion-container">
+            <h1>Find the Right Price</h1>
+            <p class="conversion-sub">Simply select the currency you would like to convert to to calculate price tags in your desired currency.</p>
+            <div class="data-container">
+                <form id="convert_form" onsubmit="return false">
+                    <div>
+                        <div>
+                            <p class="conversion-tag">Price (USD)</p>
+                            <div class="input-container">
+                                <div>
+                                    <input id="input-field" type="text" value="">
+                                    <div class="support-container">
+                                        <p id="err1">Value must be between 0 and 10,000</p>
+                                    </div>
+                                </div>
+                                
+                                <span>=</span>
+                                <label id="convertLbl">$0.00</label>
+                            </div>
+                        </div>
+                    </div>
+                    <select class="select-box">
+                        <option id="aus">Australian Dollar ($)</option>
+                        <option id="uk">British Pound (£)</option>
+                        <option id="eur">Euro (€)</option>
+                        <option id="mex">Mexican Peso ($)</option>
+                        <option id="jpn">Japanese Yen (¥)</option>
+                        <option id="kor">South Korean Won (₩)</option>
+                    </select>
+                    <button class="convert-button">Convert</button>
+                </form>
+                <p class="disclaimer">*Conversions accurate based on data collected on November 8th, 2022</p>
+            </div>
+        </div>
     </main>
+    <div class="divider"></div>
+    <p class="footer">Designed and created by Michael Cesena</p>
 </body>
 
 </html>

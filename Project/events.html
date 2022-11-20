@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Events</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="events.css">
     <link rel="stylesheet" href="global-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="nav.js" defer></script>
+    <script src="events.js"></script>
 </head>
 <nav>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
@@ -29,7 +31,36 @@
 
 <body>
     <main>
-
+        <div class="content-wrapper">
+            <div class="calendar-container">
+                <h1><span id="month_year"></span></h1>
+                <table id="calendar">
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-container">
+                <h1>Join us for upcoming events</h1>
+                <h2>0 Upcoming Events</h2>
+                <p>There are currently no scheduled upcoming events. Please sign-up below so that you can receive updates on our latest events.</p>
+                <div class="signup-container">
+                    <label for="signup">
+                        <span>Email</span>
+                        <input id="signup" type="text" name="email">
+                    </label>
+                    <button class="generic-button">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <p class="footer">Designed and created by Michael Cesena</p>
     </main>
 </body>
 

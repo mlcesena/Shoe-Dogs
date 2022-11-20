@@ -96,6 +96,35 @@ body {
     /* overflow-x: hidden; */
 }
 
+.generic-button {
+    outline: none;
+    font-family: "Noto Sans Mono", sans-serif !important;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: 250ms;
+    width: 150px;
+    height: 50px;
+}
+
+.generic-button:hover {
+    cursor: pointer;
+    color: green;
+    border: 1px solid green;
+}
+
+.support-container {
+    padding-top: 0;
+    padding-bottom: 20px;
+    height: 20px;
+}
+
+.support-container p {
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    color: red;
+}
+
 .primary-navigation a {
     padding-top: 20px;
     font-size: 1em;
