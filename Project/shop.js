@@ -17,9 +17,7 @@ prodLink.forEach(element => {
         }  
         const productInfo = "" + image1 + "," + image2 + "," + title + "," + price;
         setCookie("product", productInfo);
-        const test = getCookieByName("product");
-        console.log(test);
-        
+        // const test = getCookieByName("product");
     });
 });
 

@@ -18,10 +18,12 @@
 }
 
 .conversion-tag {
-    padding-top: 30px;
-    margin-bottom: 5px;
+    margin: 30px 0 5px 0;
 }
 
+.conversion-data {
+    width: 250px;
+}
 
 .data-container {
     display: flex;
@@ -38,6 +40,7 @@
 
 .input-container {
     display: flex;
+    align-items: center;
     gap: 20px;
     padding-bottom: 10px;
 }
@@ -62,18 +65,6 @@
     font-size: 20px;
 }
 
-.support-container {
-    padding-top: 0;
-    padding-bottom: 20px;
-    height: 20px;
-}
-
-.support-container p {
-    font-size: 12px;
-    margin: 0 0 10px 0;
-    color: red;
-}
-
 .select-box {
     width: 200px;
     height: 35px;
@@ -95,7 +86,7 @@
     transition: 250ms;
     width: 150px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .convert-button:hover {

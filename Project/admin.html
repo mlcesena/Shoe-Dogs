@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
     <script src="nav.js" defer></script>
+    <script src="login.js" defer></script>
 </head>
 <nav>
     <h1 class="nav-title"><a href="index.html">Shoe Dogs</a></h1>
@@ -18,21 +19,41 @@
 <body>
     <main>
         <div class="login-container">
-            <h1>Login to your admin account</h1>
-            <div class="input-container">
-                <p>Admin ID</p>
-                <input type="text">
-                <p>Username</p>
-                <input type="text">
-                <p>Password</p>
-                <input type="password">
-            </div>
-            <div class="options">
-                <a>Forgot Password?</a>
-            </div>
-            <form>
-                <button class="login-button">Sign in</button>
+            <h1>Login to your account</h1>
+            <form class="input-container" action="index.html">
+                <div class="data-container">
+                    <p>Admin ID</p>
+                    <div class="input-field">
+                        <input id="admin" type="text" required>
+                    </div>
+                    <div class="support-container">
+                        <p id="err">Please enter your numerical Admin ID</p>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <p>Username</p>
+                    <div class="input-field">
+                        <input id="user" type="text" required>
+                    </div>
+                    <div class="support-container">
+                        <p id="err1">Please enter your user name</p>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <p>Password</p>
+                    <div class="input-field">
+                        <input id="pass" type="password" required>
+                    </div>
+                    <div class="support-container">
+                        <p id="err2">Please enter your password</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <a>Forgot Password?</a>
+                </div>
+                <button class="login-button" type="submit">Sign in</button>
             </form>
+            
         </div>
     </main>
 </body>

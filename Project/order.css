@@ -87,6 +87,7 @@
     .sizing-container {
         flex-direction: column;
         align-items: flex-start;
+        padding-bottom: 10px;
     }
 
     .quantity-container {
@@ -95,7 +96,7 @@
 
     .product-title {
         line-height: 1em;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
 }

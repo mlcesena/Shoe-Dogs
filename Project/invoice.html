@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="global-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Mono">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="nav.js" defer></script>
+    <script src="invoice.js" defer></script>
 </head>
 <nav>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
@@ -31,11 +33,11 @@
     <main>
         <div class="order-details">
             <h1>Thank You for Your Purchase!</h1>
-            <h2>Order Number: 587392457908</h2>
-            <p>Item: Place Holder</p>
-            <p>Size: S</p>
-            <p>Quantity: 2</p>
-            <p>Sale Total: $153.85</p>
+            <h2 id="order-number">Order Number: 587392457908</h2>
+            <p id="item">Item: Place Holder</p>
+            <p id="size">Size: S</p>
+            <p id="quantity">Quantity: 2</p>
+            <p id="price">Sale Total: $153.85</p>
             <form action="index.html">
                 <button class="return-button">Return to Home</button>
             </form>
